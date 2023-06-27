@@ -86,17 +86,7 @@ If you have trouble running any of these steps, see the Troubleshooting section 
 
 # Directions for exporting a PDF
 
-JupyterLab doesn't wrap cell text when exporting to PDF.
-This causes the resulting PDFs to not include all the source code.
-The fix is to replace the templates.
-
-1. From `./jupyter_lab_exporter` copy `article.tplx` and `style_ipython.tplx` to `./env/Lib/site-packages/nbconvert/templates/latex/`, overwriting the defaults.
-
-1. In the JupyterLab menu click `File`→`Export Notebook As`→`Export Notebook to PDF` and wait for it to finish and download the PDF.
-
-Note that Altair figures may be fuzzy.
-There is [at least one way](https://github.com/altair-viz/altair/issues/329#issuecomment-473524751) to try to fix this.
-
+1. In the JupyterLab menu click `File`→`Save and Export Notebook As`→`PDF` and wait for it to finish and download the PDF.
 
 # Optional features
 
@@ -215,14 +205,3 @@ edit `/env/Lib/site-packages/tornado/platform/asyncio.py` following the instruct
         ```
         pip install -r requirements.txt
         ```
-
-### Altair issues
-
-* Read the relevant part of [the Altair documentation](https://altair-viz.github.io/user_guide/API.html).
-
-* Check [the UW Visualization Curriculum debugging guide](https://github.com/uwdata/visualization-curriculum/blob/master/altair_debugging.ipynb) and the [Altair FAQ](https://altair-viz.github.io/user_guide/faq.html) for answers.
-
-* The developers of Altair sometimes release a new version via pip and update [the documentation](https://altair-viz.github.io/user_guide/API.html) before it is stable.
-    Note that the documentation version and Altair version you are using may be out of sync. (See the top-left of the documentation page for the version number, and in Jupyter Lab run `alt.__version__` in a cell to see the Altair version). In this assignment, using the `requirements.txt` file we are asking you to install a particular version to avoid some issues like this.
-
-* You may run into issues where pip is using a different python than Jupyter Lab is running. E.g., you may install a package but then Jupyter complains it is unavailable. In that case, instead of `pip install` try running `python -m pip install`.
