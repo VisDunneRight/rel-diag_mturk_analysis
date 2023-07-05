@@ -35,7 +35,7 @@
    ```
    If you want the latest package versions instead of the exact versions of packages we used, instead run:
    ```
-   pip install -r requirements_basic.txt
+   pip install -r requirements-basic.txt
    ```
 
 If you have trouble running any of these steps, see the Troubleshooting section below.
