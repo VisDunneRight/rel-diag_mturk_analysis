@@ -205,3 +205,7 @@ edit `/env/Lib/site-packages/tornado/platform/asyncio.py` following the instruct
         ```
         pip install -r requirements.txt
         ```
+		
+# Credits
+
+This `readme.md` file and the preregistration template is based on [Leventidis et al., 2020](https://osf.io/mycr2/), which was released under CC-By Attribution 4.0 International.
