@@ -7,7 +7,6 @@ figs/
 data/users-table-pilot-raw.csv
 data/users-table-raw.csv
 data/worker_ids.csv
-wolf_tests
 rel-diag_mturk_analysis2.ipynb
 rel-diag_mturk_analysis3.ipynb
 rel-diag_mturk_analysis4.ipynb
