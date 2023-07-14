@@ -1,4 +1,5 @@
-# Data Analysis of Relational Diagrams AMT study
+# Data Analysis of the SQL vs. Visual Diagrams on time and correctness matching relational query patterns Mturk study
+
 
 # Setup instructions
 1. Clone the repo or otherwise download the files.
