@@ -277,8 +277,8 @@ modes = ['SQL', 'RD']
 mode_to_name = {0: 'SQL', 1: 'RD'}
 
 # anonymizeddata = 'data/users-table-pilot.csv'                      # pilot
-anonymizeddata = 'data/users-table-anonymized.csv'
-transformeddata = 'data/transformed_data.csv'   # file with appropriately transformed data ready for analysis
+anonymizeddata = 'data/users-table-pilot.csv'
+transformeddata = 'data/transformed_data-pilot.csv'   # file with appropriately transformed data ready for analysis
 
 BOOTSTRAPCONFIDENCE = 0.95      # confidence level used for bootstrap
 BOOTSTRAPMETHOD = 'BCa'         # method used for bootstrap, appears to be better than the textbook version for mean (but not for median), also available as 'percentage'
@@ -297,15 +297,15 @@ if savefig:
     import os
     from os.path import isdir
     cwd = os.getcwd()   # Get current working directory, but you can specify your own directory of course.
-    if  os.path.exists(cwd + "/figs"):
+    if  os.path.exists(cwd + "/pilotfigs"):
         print("Directory already exists")
-        fig_dir = cwd + "/figs"     # Assign the existing directory to a variable
-    elif not os.path.exists(cwd + "/figs"):
+        fig_dir = cwd + "/pilotfigs"     # Assign the existing directory to a variable
+    elif not os.path.exists(cwd + "/pilotfigs"):
         print("Directory does not exist and will be created ......")
-        os.makedirs(cwd + "/figs")
-        if isdir(cwd + "/figs"):
+        os.makedirs(cwd + "/pilotfigs")
+        if isdir(cwd + "/pilotfigs"):
             print('Directory was created succesfully')
-        fig_dir = cwd + "/figs"     # Assign the created directory to a variable
+        fig_dir = cwd + "/pilotfigs"     # Assign the created directory to a variable
     else:
         print("Something went wrong")
 
@@ -605,8 +605,8 @@ ax.legend_.remove()
 plt.grid(axis = 'x', linewidth = 0.5, color = 'lightgray')
 
 if savefig:
-    plt.savefig(fig_dir + f'/q1_figure1_variant{VARIANT}.pdf', bbox_inches='tight')
-    plt.savefig(fig_dir + f'/q1_figure1_variant{VARIANT}.svg', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q1_figure1_variant{VARIANT}-pilot.pdf', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q1_figure1_variant{VARIANT}-pilot.svg', bbox_inches='tight')
 
 # %% [markdown] jupyter={"outputs_hidden": false}
 # # Question 1. Figure 1b
@@ -734,8 +734,8 @@ plt.grid(axis = 'x', linewidth = 0.5, color = 'lightgray')
 ax.legend_.remove()
 
 if savefig:
-    plt.savefig(fig_dir + f'/q1_figure2_variant{VARIANT}.pdf', bbox_inches='tight')
-    plt.savefig(fig_dir + f'/q1_figure2_variant{VARIANT}.svg', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q1_figure2_variant{VARIANT}-pilot.pdf', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q1_figure2_variant{VARIANT}-pilot.svg', bbox_inches='tight')
 
 # %% [markdown] jupyter={"outputs_hidden": false}
 # # Question 2
@@ -941,8 +941,8 @@ plt.grid(axis = 'x', linewidth = 0.5, color = 'lightgray')
 sns.despine()               # remove bounding box
 
 if savefig:
-    plt.savefig(fig_dir + f'/q2_figure_variant{VARIANT}.pdf', bbox_inches='tight')
-    plt.savefig(fig_dir + f'/q2_figure_variant{VARIANT}.svg', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q2_figure_variant{VARIANT}-pilot.pdf', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q2_figure_variant{VARIANT}-pilot.svg', bbox_inches='tight')
 
 # %% [markdown] jupyter={"outputs_hidden": false}
 # # Question 3: four patterns
@@ -1134,8 +1134,8 @@ plt.grid(axis = 'x', linewidth = 0.5, color = 'lightgray')
 sns.despine()               # remove bounding box
 
 if savefig:
-    plt.savefig(fig_dir + f'/q3_figure_variant{VARIANT}.pdf', bbox_inches='tight')
-    plt.savefig(fig_dir + f'/q3_figure_variant{VARIANT}.svg', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q3_figure_variant{VARIANT}-pilot.pdf', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q3_figure_variant{VARIANT}-pilot.svg', bbox_inches='tight')
 
 # %% [markdown] jupyter={"outputs_hidden": false}
 # # Question 4: Correctness
@@ -1309,8 +1309,8 @@ sns.despine()               # remove bounding box
 ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0))           # show in percentage
 
 if savefig:
-    plt.savefig(fig_dir + f'/q4_figure_variant{VARIANT}.pdf', bbox_inches='tight')
-    plt.savefig(fig_dir + f'/q4_figure_variant{VARIANT}.svg', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q4_figure_variant{VARIANT}-pilot.pdf', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q4_figure_variant{VARIANT}-pilot.svg', bbox_inches='tight')
 
 # %% [markdown] jupyter={"outputs_hidden": false}
 # # Question 4. Figure 4b
@@ -1437,8 +1437,8 @@ ax.legend_.remove()
 ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0, decimals=0), )           # show in percentage
 
 if savefig:
-    plt.savefig(fig_dir + f'/q4_figure2_variant{VARIANT}.pdf', bbox_inches='tight')
-    plt.savefig(fig_dir + f'/q4_figure2_variant{VARIANT}.svg', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q4_figure2_variant{VARIANT}-pilot.pdf', bbox_inches='tight')
+    plt.savefig(fig_dir + f'/q4_figure2_variant{VARIANT}-pilot.svg', bbox_inches='tight')
 
 # %% [markdown] jupyter={"outputs_hidden": false}
 # # Print user feedback
