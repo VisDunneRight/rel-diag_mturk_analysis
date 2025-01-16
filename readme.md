@@ -4,7 +4,7 @@
 # Setup instructions
 1. Clone the repo or otherwise download the files.
 
-1. `CD` to the repo directory. Create and activate a virtual environment for this project. You may need to modify the code you use depending on what Python you have installed and how your machine is configured.
+1. `CD` to the repo directory. Create and activate a virtual environment for this project. You may need to modify the code you use depending on what Python you have installed and how your machine is configured. Note that the authors used Python 3.10.11 on Windows with the packages specified in `requirements.txt`.
 
 1. Run the setup commands below.
 
